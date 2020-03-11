@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Formulario de cadastro</title>
+</head>
+<body>
+	<h1>Bem vindo a ficha cadastral 2°T.I</h1>
+	<h2>Preencha o formulario com seus dados pessoais</h2>
+
+<form method="POST" action="recebe.php">
+<!--dados pessoais-->
+<div>
+<fieldset>
+	
+	<legend>Dados pessoais:</legend>
+	
+	<table cellpadding="10">
+		<tr>
+			<td>
+				<label for="Nome">Nome: </label>
+			</td>
+			<td align="left">
+				<input type="text" name="Nome">
+			</td>
+
+			<td>
+				<label for="Sobrenome">Sobrenome: </label>
+			</td>
+			<td align="left">
+				<input type="text" name="Sobrenome">
+			</td>
+        </tr>
+        <tr>
+        	<td>
+        		<label>Data de Nascimento: </label>
+        	</td>
+        	<td align="left">
+        		<input type="text" name="dia" size="2" maxlength="2" value="dd">
+        		<input type="text" name="mes" size="2" maxlength="2" value="mm">
+        		<input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+        	</td>
+        </tr>	
+        <tr>
+        	<td>
+        		<label for="RG">RG: </label>
+        	</td>
+        	<td>
+        		<input type="text" name="RG" size="11" maxlength="11">
+        	</td>
+        </tr>	
+        <tr>
+        	<td>
+        		<label for="CPF">CPF: </label>
+        	</td>
+        	<td>
+        		<input type="text" name="CPF" size="9" maxlength="9"> - <input type="text" name="CPF" size="2" maxlength="2">
+        	</td>
+        </tr>
+	</table>
+</fieldset>	
+</div>
+
+<div style="margin-top: 20px">
+<fieldset>
+	<legend>Dados de Endereço: </legend>
+	<table cellpadding="10">
+            
+            <tr>
+		    <td>
+				<label for="RUA">Rua:</label>
+			</td>
+			<td align="left">
+				<input type="text" name="RUA">
+			</td>
+			 
+			 <td>
+				<label for="Numero">Numero:</label>
+			</td>
+			<td align="left">
+				<input type="text" name="Numero" size="4">
+			</td>
+			
+			</tr>
+			<tr>
+			 <td>
+				<label for="Bairro">Bairro: </label>
+			</td>
+			<td align="left">
+				<input type="text" name="Bairro">
+			</td>
+		    </tr>
+
+		    <tr>
+		    	<td>
+		    		<label for="Estado">Estado: </label>
+		    	</td>
+		    	<td align="left">
+		    		<select name="Estado">
+		    			<option value="AC">Acre</option>
+		    			<option value="AL">Alagoas</option>
+		    			<option value="AM">Amazonas</option>
+		    		    <option value="AP">Amapa</option>
+		    		    <option value="Ba">Bahia</option>
+		    		    <option value="CE">Ceára</option>
+		    		    <option value="DF">Distrito Federal</option>
+		    		    <option value="ES">Espirito Santo</option>
+		    		    <option value="Go">Goisa</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato grosso</option>
+                        <option value="MS">Mato Grssso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Para</option>
+                        <option value="PB">Paraiba</option>
+                        <option value="PR">Parana</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piaui</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio grande do sul</option>
+                        <option value="RO">Rondonia</option>                      
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa catarina</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="TO">Tocantins</option>
+		    		</select>
+		    	</td>
+		    </tr>
+		    <tr>
+		    	<td>
+		    		<label for="Cidade">Cidade: </label>
+		    	</td>	
+		    	<td>
+		    		<input type="text" name="Cidade">
+		    	</td>    	
+		    </tr>
+		    <tr>
+		    	<td>
+		    		<label for="CEP">CEP: </label>
+		    	</td>
+		    	<td>
+		    		<input type="text" name="CEP" size="5" maxlength="5"> - <input type="text" name="CEP2" size="3" maxlength="3">
+		    	</td>
+		    </tr>
+
+	</table>
+</fieldset>
+</div>
+
+<div style="margin-top: 20px">
+	<fieldset>
+		<legend>Dados de Login: </legend>
+		<table cellpadding="10">
+			<tr>
+				<td>
+					<label for="Email">E-mail</label>
+				</td>
+				<td>
+					<input type="text" name="Email">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Imagem">Imagem de perfil: </label>
+				</td>
+				<td>
+					<input type="file" name="Imagem">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Login">Login de usuario: </label>
+				</td>
+				<td>
+					<input type="text" name="Login">
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<label for="Senha">Senha: </label>
+				</td>
+				<td>
+					<input type="password" name="Senha">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Confirmar">Confimar senha: </label>
+				</td>
+				<td>
+					<input type="password" name="Senha2">
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</div>
+<div style="margin-top: 20px">
+<input type="submit" >
+<input type="reset" value="limpar">
+</div>
+</form>
+</body>
+</html>
